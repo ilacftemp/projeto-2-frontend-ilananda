@@ -1,0 +1,139 @@
+.pag-filme {
+    color: var(--inactive-color);
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+.text-filme{
+    color: var(--theme-color);
+    color: var(--inactive-color);
+}
+
+.card-filme {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-left: -10px;
+    background-color: var(--content-bg);
+    border-radius: 14px;
+    border: 1px solid var(--theme-bg-color);
+    padding: 20px;
+    &::-webkit-scrollbar {
+      height: 6px;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: var(--scrollbar-bg);
+      border-radius: 10px;
+    }
+  }
+
+  .word-bar {
+    height: 40px;
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    padding-left: 16px;
+    border-radius: 4px;
+    input {
+     width: 100%;
+     height: 100%;
+     border: none;
+     background-color: var(--content-bg);
+     border-radius: 4px;
+     font-family: var(--body-font);
+     font-size: 15px;
+     font-weight: 500;
+     padding: 0 20px 0 40px;
+     box-shadow: 0 0 0 2px rgb(134 140 160 / 2%);
+     color: var(--theme-color);
+     &::placeholder {
+      font-family: var(--body-font);
+      color: var(--inactive-color);
+      font-size: 15px;
+      font-weight: 500;
+     }
+    }
+   }
+
+   .word-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: var(--search-bg);
+    border-radius: 4px;
+    font-family: var(--body-font);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 20px 0 40px;
+    box-shadow: 0 0 0 2px rgb(134 140 160 / 2%);
+    background-color: var(--content-bg);
+    background-position: 16px 48%;
+    color: var(--theme-color);
+  }
+
+  .palavraMaisDeletar{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bin{
+    display: flex;
+    background: transparent;
+    border: none;
+    margin-top: 21px;
+    margin-left: 15px;
+    width: 40px;
+  }
+
+  .add{
+    display: flex;
+    background: transparent;
+    border: none;
+    margin-top: 3px;
+    width: 40px;
+    margin-left: 33px;
+  }
+
+  .palavra{
+    font-size: 1.4rem;
+  }
+
+  .titulo {
+    max-width: 100%; 
+    overflow: hidden; 
+    word-wrap: break-word;
+    white-space: normal; 
+    display: flex;
+    justify-content: center;
+    color: var(--theme-color);
+}
+
+
+.carroselPagFilme {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; /* Start from the left */
+  width: 98%;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  background-color: var(--content-bg);
+  border-radius: 14px;
+  border: 1px solid var(--theme-bg-color);
+  padding: 20px;
+  gap: 20px;
+  white-space: nowrap; /* Prevent line breaks */
+  &::-webkit-scrollbar {
+    height: 6px;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-bg);
+    border-radius: 10px;
+  }
+}
